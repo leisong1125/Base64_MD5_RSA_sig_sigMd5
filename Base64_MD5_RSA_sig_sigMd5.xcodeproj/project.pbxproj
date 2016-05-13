@@ -15,6 +15,11 @@
 		2F217D091CE471AE00D01DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F217D071CE471AE00D01DAB /* LaunchScreen.storyboard */; };
 		2F217D141CE471AF00D01DAB /* Base64_MD5_RSA_sig_sigMd5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F217D131CE471AF00D01DAB /* Base64_MD5_RSA_sig_sigMd5Tests.m */; };
 		2F217D1F1CE471AF00D01DAB /* Base64_MD5_RSA_sig_sigMd5UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F217D1E1CE471AF00D01DAB /* Base64_MD5_RSA_sig_sigMd5UITests.m */; };
+		2F217D311CE4825A00D01DAB /* Base64ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F217D301CE4825A00D01DAB /* Base64ViewController.m */; };
+		2F217D341CE4826800D01DAB /* MD5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F217D331CE4826800D01DAB /* MD5ViewController.m */; };
+		2F217D371CE4827300D01DAB /* RSAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F217D361CE4827300D01DAB /* RSAViewController.m */; };
+		2F217D3E1CE4830800D01DAB /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F217D3A1CE4830800D01DAB /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2F217D3F1CE4830800D01DAB /* ZZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F217D3D1CE4830800D01DAB /* ZZBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 		2F217D1A1CE471AF00D01DAB /* Base64_MD5_RSA_sig_sigMd5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Base64_MD5_RSA_sig_sigMd5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F217D1E1CE471AF00D01DAB /* Base64_MD5_RSA_sig_sigMd5UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base64_MD5_RSA_sig_sigMd5UITests.m; sourceTree = "<group>"; };
 		2F217D201CE471AF00D01DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F217D2F1CE4825A00D01DAB /* Base64ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64ViewController.h; sourceTree = "<group>"; };
+		2F217D301CE4825A00D01DAB /* Base64ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64ViewController.m; sourceTree = "<group>"; };
+		2F217D321CE4826800D01DAB /* MD5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5ViewController.h; sourceTree = "<group>"; };
+		2F217D331CE4826800D01DAB /* MD5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5ViewController.m; sourceTree = "<group>"; };
+		2F217D351CE4827300D01DAB /* RSAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAViewController.h; sourceTree = "<group>"; };
+		2F217D361CE4827300D01DAB /* RSAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAViewController.m; sourceTree = "<group>"; };
+		2F217D391CE4830800D01DAB /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		2F217D3A1CE4830800D01DAB /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		2F217D3B1CE4830800D01DAB /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		2F217D3C1CE4830800D01DAB /* ZZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZBase64.h; sourceTree = "<group>"; };
+		2F217D3D1CE4830800D01DAB /* ZZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZBase64.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,9 @@
 		2F217CF81CE471AE00D01DAB /* Base64_MD5_RSA_sig_sigMd5 */ = {
 			isa = PBXGroup;
 			children = (
+				2F217D2C1CE47C6E00D01DAB /* Base64 */,
+				2F217D2D1CE47C6E00D01DAB /* MD5 */,
+				2F217D2E1CE47C6E00D01DAB /* RSA */,
 				2F217CFC1CE471AE00D01DAB /* AppDelegate.h */,
 				2F217CFD1CE471AE00D01DAB /* AppDelegate.m */,
 				2F217CFF1CE471AE00D01DAB /* ViewController.h */,
@@ -138,6 +157,46 @@
 				2F217D201CE471AF00D01DAB /* Info.plist */,
 			);
 			path = Base64_MD5_RSA_sig_sigMd5UITests;
+			sourceTree = "<group>";
+		};
+		2F217D2C1CE47C6E00D01DAB /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				2F217D381CE4830800D01DAB /* Class */,
+				2F217D2F1CE4825A00D01DAB /* Base64ViewController.h */,
+				2F217D301CE4825A00D01DAB /* Base64ViewController.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		2F217D2D1CE47C6E00D01DAB /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				2F217D321CE4826800D01DAB /* MD5ViewController.h */,
+				2F217D331CE4826800D01DAB /* MD5ViewController.m */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		2F217D2E1CE47C6E00D01DAB /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				2F217D351CE4827300D01DAB /* RSAViewController.h */,
+				2F217D361CE4827300D01DAB /* RSAViewController.m */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		2F217D381CE4830800D01DAB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2F217D391CE4830800D01DAB /* GTMBase64.h */,
+				2F217D3A1CE4830800D01DAB /* GTMBase64.m */,
+				2F217D3B1CE4830800D01DAB /* GTMDefines.h */,
+				2F217D3C1CE4830800D01DAB /* ZZBase64.h */,
+				2F217D3D1CE4830800D01DAB /* ZZBase64.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +330,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F217D011CE471AE00D01DAB /* ViewController.m in Sources */,
+				2F217D311CE4825A00D01DAB /* Base64ViewController.m in Sources */,
+				2F217D341CE4826800D01DAB /* MD5ViewController.m in Sources */,
+				2F217D371CE4827300D01DAB /* RSAViewController.m in Sources */,
 				2F217CFE1CE471AE00D01DAB /* AppDelegate.m in Sources */,
 				2F217CFB1CE471AE00D01DAB /* main.m in Sources */,
+				2F217D3F1CE4830800D01DAB /* ZZBase64.m in Sources */,
+				2F217D3E1CE4830800D01DAB /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
